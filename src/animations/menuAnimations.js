@@ -2,7 +2,10 @@ import gsap from "gsap";
 let tl = gsap.timeline();
 
 export const openMenu = width => {
-  tl.to("body", { duration: 0.01, css: { display: "hidden" } })
+  tl.to("nav", 0, {
+    css: { display: "block" }
+  })
+    .to("body", { duration: 0.01, css: { display: "hidden" } })
     .to(".App", {
       duration: 1,
       y: width <= 654 ? "70vh" : window.innerHeight / 2,
@@ -113,5 +116,8 @@ export const closeMenu = () => {
       css: {
         overflow: "auto"
       }
+    })
+    .to("nav", 0, {
+      css: { display: "none" }
     });
 };

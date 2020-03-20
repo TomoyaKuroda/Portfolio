@@ -1,13 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { ReactComponent as RightArrow } from "../assets/arrow-right.svg";
-import gsap from "gsap";
 export default function Banner() {
-  let tl = gsap.timeline();
-  useEffect(() => {
-    tl.to(".main", 0, {
-      css: { display: "block" }
-    });
-  });
   return (
     <section className="main">
       <div className="container">
