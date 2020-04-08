@@ -5,6 +5,7 @@
 @import "./components/banner.scss";
 @import "./components/cases.scss";
 @import "./components/navigation.scss";
+@import "./components/projects.scss";
 
 body,
 html {
@@ -18,6 +19,14 @@ html {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+a:active,
+a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
 }
 
 .container {
@@ -133,7 +142,7 @@ html {
 
 .App {
   z-index: 2;
-  transition: tranlateY(0);
+  transform: translateY(0);
   position: relative;
 }
 .page {
@@ -145,3 +154,19 @@ html {
     align-items: center;
   }
 }
+
+// .animation-page-enter {
+//   opacity: 0;
+// }
+// .animation-page-enter-active {
+//   opacity: 1;
+//   transition: opacity 400ms;
+//   transition-delay: 600ms;
+// }
+// .animation-page-exit {
+//   opacity: 1;
+// }
+// .animation-page-exit-active {
+//   opacity: 0;
+//   transition: opacity 400ms;
+// }

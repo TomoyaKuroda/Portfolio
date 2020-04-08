@@ -10,8 +10,8 @@ const Navigation = () => {
             <div className="nav-label">Menu</div>
             <ul className="nav-links">
               <li>
-                <NavLink to="/case-studies" exact>
-                  Case Studies
+                <NavLink to="/projects" exact>
+                  Projects
                 </NavLink>
               </li>
               <li>
@@ -25,8 +25,8 @@ const Navigation = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about-us" exact>
-                  About us
+                <NavLink to="/about" exact>
+                  About me
                 </NavLink>
               </li>
             </ul>
@@ -35,31 +35,42 @@ const Navigation = () => {
             <div className="nav-label">Contact</div>
             <div className="nav-infos">
               <ul className="nav-info">
+                <li className="nav-info-label">Links</li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/tomoya-kuroda/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/tomoyakuroda"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://prismic-io.s3.amazonaws.com/tomoyaportfolio/787c663d-d8da-4059-a512-47cb584574c0_Tomoya+Kuroda.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Resume
+                  </a>
+                </li>
+              </ul>
+              <ul className="nav-info">
                 <li className="nav-info-label">Email</li>
                 <li>
                   <NavLink to="/contact" exact>
-                    Get in touch with us
+                    Get in touch with me
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink to="/audit" exact>
-                    Get a free audit
-                  </NavLink>
-                </li>
-              </ul>
-              <ul className="nav-info">
-                <li className="nav-info-label">Headquarters</li>
-                <li>Route du Jura 49</li>
-                <li>1700 Fribourg</li>
-                <li>Switzerland</li>
-              </ul>
-              <ul className="nav-info">
-                <li className="nav-info-label">Phone</li>
-                <li>41 (0) 75 510 28 70</li>
-              </ul>
-              <ul className="nav-info">
-                <li className="nav-info-label">Legal</li>
-                <li>Privacy and Cookies</li>
               </ul>
             </div>
           </div>

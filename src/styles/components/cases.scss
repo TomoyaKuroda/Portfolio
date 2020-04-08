@@ -40,9 +40,19 @@
       position: relative;
       background: $black;
       cursor: pointer;
+      overflow: hidden;
+      @include media("<=tablet") {
+        overflow: visible;
+      }
       &:hover {
         .case-image {
           opacity: 0.4;
+          transform: scale(1.05);
+          transition-duration: 0.3s;
+          transition-timing-function: ease-in;
+          @include media("<=tablet") {
+            transform: none;
+          }
         }
       }
       .case-details {
@@ -56,8 +66,9 @@
         box-sizing: border-box;
         z-index: 1;
         position: relative;
+
         @include media("<=tablet") {
-          width: 100vw;
+          width: 100%;
         }
         @include media("<=phone") {
           padding: 16px;
@@ -93,6 +104,7 @@
           }
         }
       }
+
       .case-image {
         top: 0;
         left: 0;
@@ -102,6 +114,7 @@
         position: absolute;
         opacity: 0.65;
         transition: 0.4s cubic-bezier(0.6, -0.05, 0.1, 0.99);
+
         img {
           height: 100%;
           width: 100%;

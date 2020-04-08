@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": "ARchemisT",
+      "name": "ARchemisT",
+      "details": "so, good",
+      "price": "111",
+      "image": "https://cdn.shopify.com/s/files/1/2060/6331/products/image.png?v=1571331841"
+    },
+    {
+      "id": "assiston",
+      "name": "assiston",
+      "details": "so, good",
+      "price": "111",
+      "image": "https://cdn.shopify.com/s/files/1/2060/6331/products/image.png?v=1571331841"
+    },
+    {
+      "id": "Chat-App",
+      "name": "Chat App",
+      "details": "so, good",
+      "price": "111",
+      "image": "https://cdn.shopify.com/s/files/1/2060/6331/products/image.png?v=1571331841"
+    }
+  ]
+}

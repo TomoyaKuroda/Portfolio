@@ -5,22 +5,22 @@ import { ReactComponent as CasesPrev } from "../assets/arrow-left.svg";
 const caseStudies = [
   {
     id: 1,
-    subTitle: "Curology",
-    title: "A custom formule for your skin's unique needs.",
-    img: "curology-min"
+    subTitle: "Landing Page",
+    title: "ARchemisT",
+    img: "ARchemisT-min",
   },
   {
     id: 2,
-    subTitle: "Yourspace",
-    title: "Open space floor plans for you next venture",
-    img: "yourspace-min"
+    subTitle: "WordPress",
+    title: "assist on",
+    img: "assist-on-min",
   },
   {
     id: 3,
-    subTitle: "Lumin",
+    subTitle: "Chat App",
     title: "For your best look ever",
-    img: "lumin-min"
-  }
+    img: "lumin-min",
+  },
 ];
 export default function Cases() {
   return (
@@ -35,7 +35,7 @@ export default function Cases() {
           </div>
         </div>
         <div className="row">
-          {caseStudies.map(caseItem => (
+          {caseStudies.map((caseItem) => (
             <div className="case" key={caseItem.id}>
               <div className="case-details">
                 <span>{caseItem.subTitle}</span>

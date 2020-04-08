@@ -5,7 +5,7 @@ export const openMenu = width => {
   tl.to("nav", 0, {
     css: { display: "block" }
   })
-    .to("body", { duration: 0.01, css: { display: "hidden" } })
+    .to("body", { duration: 0, css: { overflow: "hidden" } })
     .to(".App", {
       duration: 1,
       y: width <= 654 ? "70vh" : window.innerHeight / 2,

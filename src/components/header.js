@@ -21,7 +21,7 @@ function Header({ history, dimensions }) {
         <div className="row v-center space-between">
           <div className="logo">
             <NavLink to="/" exact>
-              AGENCY.
+              TOMOYA
             </NavLink>
           </div>
           <div className="nav-toggle">

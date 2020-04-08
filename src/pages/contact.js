@@ -1,15 +1,15 @@
 import React from "react";
 
-const CaseStudies = () => {
+const Contact = () => {
   return (
     <div className="page">
       <div className="container">
         <div className="row">
-          <h3>this is CaseStudies page</h3>
+          <h3>this is Contact page</h3>
         </div>
       </div>
     </div>
   );
 };
 
-export default CaseStudies;
+export default Contact;
