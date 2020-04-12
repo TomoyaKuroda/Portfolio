@@ -39,22 +39,22 @@
     .case {
       position: relative;
       background: $black;
-      cursor: pointer;
+      // cursor: pointer;
       overflow: hidden;
       @include media("<=tablet") {
         overflow: visible;
       }
-      &:hover {
-        .case-image {
-          opacity: 0.4;
-          transform: scale(1.05);
-          transition-duration: 0.3s;
-          transition-timing-function: ease-in;
-          @include media("<=tablet") {
-            transform: none;
-          }
-        }
-      }
+      // &:hover {
+      //   .case-image {
+      //     opacity: 0.4;
+      //     transform: scale(1.05);
+      //     transition-duration: 0.3s;
+      //     transition-timing-function: ease-in;
+      //     @include media("<=tablet") {
+      //       transform: none;
+      //     }
+      //   }
+      // }
       .case-details {
         width: 33.3333vw;
         height: 50vh;

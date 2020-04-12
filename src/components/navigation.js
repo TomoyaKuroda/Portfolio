@@ -14,7 +14,7 @@ const Navigation = () => {
                   Projects
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/approach" exact>
                   Approach
                 </NavLink>
@@ -23,7 +23,7 @@ const Navigation = () => {
                 <NavLink to="/services" exact>
                   Services
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink to="/about" exact>
                   About me

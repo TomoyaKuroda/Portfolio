@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import gsap from "gsap";
+// import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./styles/App.scss";
+
 import Header from "./components/header";
 import Home from "./pages/home";
 import Projects from "./pages/projects";
@@ -71,24 +74,13 @@ function App() {
     <>
       <Header dimensions={dimensions} />
       <div className="App">
-        {/* <Switch location={location} key={location.pathname}> */}
         {routes.map(({ path, Component }) => (
           <Route key={path} exact path={path} exact>
-            {/* {({ match }) => (
-              <CSSTransition
-                in={match != null}
-                timeout={1200}
-                classNames="animation-page"
-                unmountOnExit
-              > */}
             <div className="animation-page">
               <Component dimensions={dimensions} />
             </div>
-            {/* </CSSTransition> */}
-            )}
           </Route>
         ))}
-        {/* </Switch> */}
       </div>
       <Navigation />
     </>

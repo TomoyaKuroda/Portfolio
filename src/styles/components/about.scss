@@ -1,0 +1,28 @@
+.page .container .row {
+  // display: block;
+  padding-top: 128px;
+  // height: 80%;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  .box {
+    box-sizing: border-box;
+    // display: none;
+    position: absolute;
+    .line {
+      box-sizing: border-box;
+      width: 200%;
+      height: 2px;
+      background-color: black;
+      left: -50%;
+      position: relative;
+    }
+    h2 {
+      text-align: center;
+      span {
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,11 +1,12 @@
 import React from "react";
+import TitleAnimation from "../lib/titleAnimation";
 
 const About = () => {
   return (
     <div className="page">
       <div className="container">
         <div className="row">
-          <h3>this is about page</h3>
+          <TitleAnimation text={"ABOUT ME"} />
         </div>
       </div>
     </div>
