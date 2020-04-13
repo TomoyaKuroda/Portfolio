@@ -4,7 +4,7 @@
       "id": "ARchemisT",
       "name": "ARchemisT",
       "category": "Landing Page",
-      "details": "I launched a responsive website along with Figma to solicit a donation for holding an art and chemistry event, and performed search engine optimization, resulting in achieving the monetary goal in five days.",
+      "detail": "I launched a responsive website along with Figma to solicit a donation for holding an art and chemistry event, and performed search engine optimization, resulting in achieving the monetary goal in five days.",
       "image": "https://images.prismic.io/tomoyaportfolio/0593cba0-6dde-4fdd-a538-6766e7731898_ARchemisT-min.png?auto=compress,format",
       "url": "https://archemist.org"
     },
@@ -12,7 +12,7 @@
       "id": "assiston",
       "name": "assiston",
       "category": "WordPress",
-      "details": "I collaborated with a web designer and tracked our progress to build custom WordPress themes for study abroad agencies so that they can introduce their business to visitors and post their news.",
+      "detail": "I collaborated with a web designer and tracked our progress to build custom WordPress themes for study abroad agencies so that they can introduce their business to visitors and post their news.",
       "image": "https://images.prismic.io/tomoyaportfolio/5005ff7e-5892-481e-b623-80895d25cf14_assist-on-min.png?auto=compress,format",
       "url": "http://assiston-toronto.com"
     },
@@ -20,7 +20,7 @@
       "id": "Chat-App",
       "name": "Chat App",
       "category": "Full Stack Application",
-      "details": "I developed the chat app which provides real time communication with Node.js, Socket.IO, and React.",
+      "detail": "I developed the chat app which provides real time communication with Node.js, Socket.IO, and React.",
       "image": "https://images.prismic.io/tomoyaportfolio/50426913-853b-499a-af1b-52aef1197aa8_coming+soon.jpg?auto=compress,format",
       "url": "https://github.com/tomoyakuroda/Chat-App"
     }
