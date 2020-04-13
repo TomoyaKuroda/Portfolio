@@ -41,28 +41,6 @@ const Projects = () => {
       const data = await res.json();
       setProjects(data);
     })();
-
-    // let tl = gsap.timeline();
-
-    // tl.to(".box", 0, {
-    //   css: { display: "block" },
-    // });
-
-    // .from(".projects .letters", 0.9, {
-    //   delay: 0.6,
-    //   scale: 4,
-    //   opacity: 0,
-    //   ease: "expo.inOut",
-    //   stagger: 0.1,
-    // })
-    // .from(".projects .line", 1.4, {
-    //   scaleX: 0,
-    //   ease: "expo.inOut",
-    //   stagger: {
-    //     amount: 0.4,
-    //   },
-    //   delay: -0.7,
-    // });
   }, []);
 
   return (
@@ -70,42 +48,9 @@ const Projects = () => {
       <div className="container">
         <div className="row">
           <TitleAnimation text={"PROJECTS"} />
-
-          {/* <div className="box">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="line"
-            ></motion.div>
-            <motion.h2
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              {title.map((element) => (
-                <span className="letters">{element}</span>
-              ))}
-            </motion.h2>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="line"
-            ></motion.div>
-          </div> */}
-
-          {/* <div className="title"> */}
-          {/* <div className="box"> */}
-          {/* <div className="box">
-            <h2>Select a protein</h2>
-          </div> */}
-          {/* </div> */}
-          {/* </div> */}
-
           <div className="container center">
             <motion.div variants={stagger} className="project-row">
-              {projects.map((project) => (
+              {projects.map((project, i) => (
                 <Link key={project.id} to={`/projects/${project.id}`}>
                   <motion.div
                     variants={fadeInUp}
@@ -117,7 +62,7 @@ const Projects = () => {
                     <motion.img
                       src={project.image}
                       width={250}
-                      transition={{ delay: 0.2 }}
+                      transition={{ delay: 0.2 + 0.1 * i }}
                       initial={{ x: 60, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
                     />

@@ -57,6 +57,13 @@
       align-items: center;
       width: 100%;
       padding: 0 80px;
+      @include media("<=1080px") {
+        padding: 0;
+      }
+
+      @include media("<=tablet") {
+        flex-direction: column;
+      }
       .card {
         box-sizing: border-box;
         position: relative;
@@ -66,6 +73,21 @@
         background: #ffffff;
         width: 425px;
         height: 425px;
+        @include media("<=1560px") {
+          width: 350px;
+          min-width: 350px;
+        }
+        @include media("<=desktop") {
+          width: 300px;
+          min-width: 300px;
+        }
+        @include media("<=1080px") {
+          width: 225px;
+          min-width: 225px;
+        }
+        // @include media("<=tablet") {
+        //   flex-direction: column;
+        // }
         margin: 24px;
         .category {
           font-size: 0.875rem;
@@ -79,6 +101,15 @@
         img {
           display: flex;
           margin: 0 auto;
+          object-fit: fill;
+          width: 100%;
+          height: auto;
+          // width: 250px;
+          // height: 200px;
+          // @include media("<=1080px") {
+          //   width: 150px;
+          //   height: 120px;
+          // }
         }
         .project-info {
           position: absolute;

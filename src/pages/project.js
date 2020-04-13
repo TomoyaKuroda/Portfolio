@@ -47,26 +47,10 @@ function Project() {
                     </motion.div>
                   </Link>
                   <motion.div variants={fadeInUp}>
-                    <span className="category">Protein</span>
+                    <span className="category">{project.category}</span>
                   </motion.div>
                   <motion.h1 variants={fadeInUp}>{project.name}</motion.h1>
                   <motion.p variants={fadeInUp}>{project.details}</motion.p>
-                  <motion.div variants={fadeInUp} className="additionals">
-                    <span>Say Free</span>
-                    <span>Gluten Free</span>
-                  </motion.div>
-                  <motion.div variants={fadeInUp} className="qty-price">
-                    <div className="qty">
-                      <div className="minus">-</div>
-                      <div className="amount">1</div>
-                      <div className="add">+</div>
-                    </div>
-                    <span className="price">{project.price}</span>
-                  </motion.div>
-                  <motion.div variants={fadeInUp} className="btn-row">
-                    <button className="add-to-car">Add to cart</button>
-                    <button className="subscribe">Subscribe</button>
-                  </motion.div>
                 </motion.div>
               </div>
             </div>
