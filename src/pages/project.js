@@ -20,7 +20,7 @@ function Project() {
   }, []);
   return (
     <motion.div initial="initial" animate="animate">
-      <div className="fullscreen page">
+      <div className="page">
         <div className="container">
           <div className="row">
             <div className="project">
@@ -51,6 +51,9 @@ function Project() {
                   </motion.div>
                   <motion.h1 variants={fadeInUp}>{project.name}</motion.h1>
                   <motion.p variants={fadeInUp}>{project.details}</motion.p>
+                  <motion.div variants={fadeInUp} className="btn-row">
+                    <button className="subscribe">Link</button>
+                  </motion.div>
                 </motion.div>
               </div>
             </div>
