@@ -38,7 +38,7 @@ function Project() {
                   src={project.metadata.thumbnail.url}
                   alt=''
                   transition={{ delay: 0.2 }}
-                  initial={{ x: 200, opacity: 0 }}
+                  initial={{ x: 100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                 />
               </motion.div>

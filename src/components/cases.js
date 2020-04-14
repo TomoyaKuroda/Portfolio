@@ -48,7 +48,7 @@ export default function Cases({ projects }) {
           <div className='cases-arrow prev disabled'>
             <CasesPrev />
           </div>
-          <div className='cases-arrow next'>
+          <div className='cases-arrow next disabled'>
             <CasesNext />
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function Cases({ projects }) {
               onClick={() => setModalShow(true)}
             >
               <div className='case-details'>
-                <span>{caseItem.title}</span>
+                <span>{caseItem.metadata.category}</span>
                 <h2>{caseItem.title}</h2>
               </div>
               <div className='case-image'>

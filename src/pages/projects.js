@@ -24,18 +24,18 @@ const titleFadeInUp = {
   },
 };
 
-const Projects = ({ projects }) => {
-  // const [projects, setProjects] = useState([]);
+const Projects = () => {
+  const [projects, setProjects] = useState([]);
 
-  // useEffect(() => {
-  //   (async function getInitialData() {
-  //     const res = await fetch(
-  //       'https://api.cosmicjs.com/v1/8bb2aed0-5dad-11ea-877a-db64793940c4/objects?pretty=true&hide_metafields=true&type=projects&read_key=qJJ33zcHTXv1MqylVItzyNJb5G2QLlWFc0OKbMvj3WsaJrDBCM&limit=20&props=slug,title,content,metadata,'
-  //     );
-  //     const data = await res.json();
-  //     setProjects(data.objects);
-  //   })();
-  // }, []);
+  useEffect(() => {
+    (async function getInitialData() {
+      const res = await fetch(
+        'https://api.cosmicjs.com/v1/8bb2aed0-5dad-11ea-877a-db64793940c4/objects?pretty=true&hide_metafields=true&type=projects&read_key=qJJ33zcHTXv1MqylVItzyNJb5G2QLlWFc0OKbMvj3WsaJrDBCM&limit=20&props=slug,title,content,metadata,'
+      );
+      const data = await res.json();
+      setProjects(data.objects);
+    })();
+  }, []);
 
   if (!projects) return <></>;
   return (
