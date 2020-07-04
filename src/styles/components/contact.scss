@@ -1,0 +1,18 @@
+.page.contact {
+  .row {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    .form {
+      //   position: relative;
+      //   top: 0%;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .field {
+      margin-top: 16px;
+    }
+  }
+}

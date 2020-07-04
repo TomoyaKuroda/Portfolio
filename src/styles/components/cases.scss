@@ -11,7 +11,7 @@
     z-index: 6;
     padding: 32px;
     box-sizing: border-box;
-    @include media("<=tablet") {
+    @include media('<=tablet') {
       display: none;
     }
     .cases-arrow {
@@ -33,7 +33,7 @@
     }
   }
   .row {
-    @include media("<=tablet") {
+    @include media('<=tablet') {
       flex-direction: column;
     }
     .case {
@@ -41,7 +41,7 @@
       background: $black;
       // cursor: pointer;
       overflow: hidden;
-      @include media("<=tablet") {
+      @include media('<=tablet') {
         overflow: visible;
       }
       // &:hover {
@@ -50,7 +50,7 @@
       //     transform: scale(1.05);
       //     transition-duration: 0.3s;
       //     transition-timing-function: ease-in;
-      //     @include media("<=tablet") {
+      //     @include media('<=tablet') {
       //       transform: none;
       //     }
       //   }
@@ -67,10 +67,10 @@
         z-index: 1;
         position: relative;
 
-        @include media("<=tablet") {
+        @include media('<=tablet') {
           width: 100%;
         }
-        @include media("<=phone") {
+        @include media('<=phone') {
           padding: 16px;
         }
         span {
@@ -79,10 +79,10 @@
           opacity: 0.8;
           color: $white;
           font-weight: 600;
-          @include media("<=desktop", ">tablet") {
+          @include media('<=desktop', '>tablet') {
             font-size: 1.4rem;
           }
-          @include media("<=phone") {
+          @include media('<=phone') {
             font-size: 1.2rem;
             line-height: 2.2rem;
           }
@@ -93,11 +93,11 @@
           width: 85%;
           margin-top: 16px;
           color: $white;
-          @include media("<=desktop", ">tablet") {
+          @include media('<=desktop', '>tablet') {
             font-size: 2rem;
             line-height: 2.4rem;
           }
-          @include media("<=phone") {
+          @include media('<=phone') {
             font-size: 1.7rem;
             line-height: 2.2rem;
             margin-top: 8px;

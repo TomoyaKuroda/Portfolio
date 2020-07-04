@@ -1,5 +1,4 @@
 import React, { useEffect, useState, Suspense } from 'react';
-import gsap from 'gsap';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { stagger, fadeInUp } from '../components/framerMotionAnimations';
