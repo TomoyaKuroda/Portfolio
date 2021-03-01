@@ -27,7 +27,7 @@
     "react-three-fiber": "^4.0.28",
     "react-transition-group": "^4.3.0",
     "sweetalert2": "^9.10.12",
-    "three": "^0.115.0"
+    "three": "^0.125.0"
   },
   "scripts": {
     "start": "react-scripts start",
